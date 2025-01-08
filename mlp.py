@@ -103,7 +103,6 @@ class MLP:
         ReLU(z) = max(0, z)
 
         '''
-        # WRITE CODE HERE
         # Compute ReLU activation on the given input and return the output
 
 
@@ -125,7 +124,6 @@ class MLP:
 
         '''
 
-        # WRITE CODE HERE
         # Compute the derivative of ReLU activation on the given input and return the output
         # Ignore any points of non-differentiability.
 
@@ -146,7 +144,6 @@ class MLP:
 
         '''
 
-        # WRITE CODE HERE
         # Compute Sigmoid activation on the given input and return the output
 
         return 1 / (1 + np.exp(-z))
@@ -165,7 +162,6 @@ class MLP:
         sigmoid(z) = 1/(1 + e^z)
 
         '''
-        # WRITE CODE HERE
         # Compute the derivative of Sigmoid activation on the given input and return the output
 
         return self.sigmoid(z) * (1 - self.sigmoid(z))
@@ -203,7 +199,6 @@ class MLP:
 
         '''
 
-        # WRITE CODE HERE
         # Perform the mathematical operations on the weights, inputs, and bias and make a prediction.
         # The prediction should be stored in self.a3, and also returned from this function.
 
@@ -257,7 +252,6 @@ class MLP:
         Each of these should hold the gradient of the loss computed by squared_loss(forward(x), y) with respect to Wi.
         '''
 
-        # WRITE CODE HERE
 
         m = x.shape[0]
 
@@ -300,7 +294,6 @@ class MLP:
         self.W1, self.W2 and self.W3 should all contain the updated values for W1, W2, W3.
         '''
 
-        # WRITE CODE HERE
         # Update the weights using the derivatives calculated above
         # DO NOT call `backprop` in this function: this function should ASSUME that `backprop` has already been called!
 
